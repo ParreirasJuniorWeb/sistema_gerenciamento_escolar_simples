@@ -1,2 +1,3 @@
 # sistema_gerenciamento_escolar_simples
-Um sistema de gestão CRUD simples feito em linguagem Python Orientado a Objetos
+
+Um Sistema de Cadastro e Consulta de Notas de Alunos que usa CRUD no PostgreSQL, usando Tkinter com GUI.
