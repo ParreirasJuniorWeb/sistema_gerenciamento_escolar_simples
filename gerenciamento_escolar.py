@@ -159,6 +159,9 @@ class AlunoApp:
 
         search_var = StringVar()
         search_entry = Entry(win, textvariable=search_var)
+
+        # Adiciona um texto de placeholder, dentro da capacidade do tkinter Entry
+        search_entry.insert(0, "Pesquisar por nome...")
         search_entry.pack(side=TOP, fill=X, padx=10, pady=5)
 
         tree = ttk.Treeview(
@@ -220,7 +223,7 @@ class AlunoApp:
 
             Button(update_win, text="Atualizar", command=update).pack(pady=10)
 
-        Button(win, text="Deletar", command=delete_selected).pack(
+        Button(win, text="Deletar", bg="#ed2456", command=delete_selected).pack(
             side=LEFT, padx=10, pady=10
         )
         Button(win, text="Atualizar", command=update_selected).pack(
